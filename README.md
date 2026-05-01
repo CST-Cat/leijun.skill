@@ -207,6 +207,14 @@ leijun/
 
 ---
 
+## 致谢
+
+感谢真诚、友善、团结、专业的 LinuxDo 社区，让我学到很多 AI 相关的知识和玩法。
+
+- [LinuxDo](https://linux.do) — 学 AI，上 L 站
+
+---
+
 ## 许可证
 
 MIT
