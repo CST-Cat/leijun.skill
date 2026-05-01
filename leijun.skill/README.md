@@ -54,16 +54,17 @@
 ## 安装
 
 ```bash
-npx skills add alchaincyf/leijun-skill
+# 方式一：直接复制 SKILL.md
+mkdir -p ~/.claude/skills/leijun
+cp SKILL.md ~/.claude/skills/leijun/
+
+# 方式二：克隆仓库后复制
+git clone https://github.com/CST-Cat/leijun.skill.git
+mkdir -p ~/.claude/skills/leijun
+cp leijun.skill/leijun.skill/SKILL.md ~/.claude/skills/leijun/
 ```
 
-然后在 Claude Code 里：
-
-```
-> 用雷军的视角帮我分析这个问题
-> 雷军会怎么看这件事？
-> 切换到雷军
-```
+重启 Claude Code 后，在对话中输入 `/leijun` 或说"用雷军的视角回答"即可触发。
 
 ## 蒸馏了什么
 
