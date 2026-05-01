@@ -92,14 +92,13 @@ python scripts/ingest.py
 
 | | leijun.skill | leijun.skill-rag |
 |---|---|---|
-| **定位** | 给别人用 | 你自己深度使用 |
 | **SKILL.md** | 纯人设 | 人设 + 检索指令 |
 | **知识来源** | 精炼在 SKILL.md | SKILL.md + 1038 个向量文档 |
 | **依赖** | 无 | Python + ChromaDB + Embedding API |
 | **触发方式** | `/leijun` | `/leijun-rag` |
 | **检索** | 不支持 | 自动检索原始材料做事实支撑 |
 
-两个版本独立完整，不互相依赖。leijun.skill 是 leijun.skill-rag 的子集。
+两个版本独立完整，不互相依赖。leijun.skill 是 leijun.skill-rag 的子集。选择取决于你的使用场景：需要开箱即用选前者，需要引用原文做事实支撑选后者。
 
 ---
 
