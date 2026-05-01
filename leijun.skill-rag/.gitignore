@@ -1,5 +1,9 @@
-# ChromaDB data
-data/*
+# ChromaDB data (keep raw/ for ingest)
+data/chroma.sqlite3
+data/*.bin
+data/*.pickle
+data/[0-9a-f]*/
+!data/raw/
 !data/.gitkeep
 
 # Python

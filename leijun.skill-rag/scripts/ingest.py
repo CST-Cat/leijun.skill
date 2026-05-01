@@ -222,7 +222,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="雷军思维蒸馏 - 数据入库脚本")
     parser.add_argument(
         "--data-dir",
-        default=os.path.join(os.path.dirname(__file__), "..", "..", "data", "raw"),
+        default=os.path.join(os.path.dirname(__file__), "..", "data", "raw"),
         help="原始数据目录",
     )
     parser.add_argument(

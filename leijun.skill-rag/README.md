@@ -27,8 +27,10 @@ pip install -r requirements.txt
 ### 2. 数据入库
 
 ```bash
-python ingest.py --data-dir ../../data/raw
+python ingest.py
 ```
+
+默认读取 `data/raw/` 目录下的 md 文件入库。
 
 入库完成后，向量库在 `leijun.skill-rag/data/` 目录。
 
