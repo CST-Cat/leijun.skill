@@ -12,30 +12,30 @@
 
 ## 快速安装
 
+你只需要一个 SKILL.md 文件，复制到指定目录即可使用。仓库中的 `CLAUDE.md` 是项目开发说明，跟使用无关。
+
 ### 方式一：纯 SKILL.md（推荐，零依赖）
 
 ```bash
-# 安装到 Claude Code
+# 复制 SKILL.md 到 skills 目录
 mkdir -p ~/.claude/skills/leijun
 cp leijun.skill/SKILL.md ~/.claude/skills/leijun/
 ```
 
 重启 Claude Code 后，输入 `/leijun` 或说"用雷军的视角回答"即可触发。
 
-### 方式二：SKILL.md + 向量检索（深度使用）
+### 方式二：SKILL.md + 向量检索（可引用原文）
 
 ```bash
-# 安装 SKILL.md
+# 复制 SKILL.md
 mkdir -p ~/.claude/skills/leijun-rag
 cp leijun.skill-rag/SKILL.md ~/.claude/skills/leijun-rag/
 
-# 安装依赖
+# 安装依赖并入库
 cd leijun.skill-rag
 python -m venv .venv
 source .venv/bin/activate
 pip install -r scripts/requirements.txt
-
-# 数据入库
 python scripts/ingest.py
 ```
 
